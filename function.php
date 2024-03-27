@@ -1,7 +1,4 @@
 <?php 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
     function cURL($url) {
         preg_match('`((?:http|https+)\:\/\/.*?\/)`i', $url, $refer);
         $ch = curl_init();
