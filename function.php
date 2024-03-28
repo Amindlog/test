@@ -39,8 +39,6 @@
 
    function setInsertInto($arrayName,$a, $b){
     try {
-        echo "<pre>";
-        var_dump($arrayName);
         $url = "https://nistp.ru/bankrot/trade_list.php?trade_number={$a}&lot_number={$b}";
         $con = connect();
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
